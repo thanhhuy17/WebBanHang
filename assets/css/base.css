@@ -15,7 +15,7 @@ html{
 }
 
 .grid{
-    width: 1800px;
+    width: 1200px;
     max-width: 100%;
     margin: 0 auto;
 }
@@ -27,4 +27,22 @@ html{
 .grid__row{
     display: flex;
     flex-wrap: wrap;
+}
+
+/* Animation */
+@keyframes moveBottom{
+    from{
+        height: 0px;
+    }
+    to{
+        height: 245px;
+    }
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }    
 }

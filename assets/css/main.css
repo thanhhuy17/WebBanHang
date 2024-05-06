@@ -15,8 +15,13 @@
 .header__navbar-item{
     display: inline-block;
     margin: 0 9px;
+    padding-bottom: 5px;
     position: relative;
 }
+.header__navbar-item--hidden-qr:hover .header__qr{
+    display: block;    
+}
+
 .header__navbar-item,
 .header__navbar-item-link{
     color: var(--white-color);
@@ -25,6 +30,7 @@
     
     font-weight: 300;
 }
+.header__navbar-list,
 .header__navbar-item,
 .header__navbar-item-link,
 .header__navbar-icon-link
@@ -68,4 +74,39 @@
 .header__navbar-item--no-pointer{
     cursor: text;
     color: var(--white-color);
+}
+/* QR x=185-y=245 */
+/* Xử lý Header QR Code */
+.header__qr{
+    background-color: #52b4db;
+    width: 200px;
+    height: 245px;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    display: none;
+    animation: moveBottom 2s infinite, fadeIn 1s ease-in;
+}
+.header__qrcode-img{
+    width: 100%;
+}
+.header__qr-link-app-out{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    
+}
+.header__qr-link-app-out-appstore{
+    height: 18px;
+    margin-left: 2px;
+    margin-right: 7px;
+    margin-bottom: 5px;
+}
+.header__qr-link-app-out-gg_play{
+    height: 18px;
+}
+.header__qr-link-app-out-app_galely{
+    height: 16px;
 }
