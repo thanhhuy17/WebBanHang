@@ -122,6 +122,7 @@
     display: none;
     /* animation */
     animation: headerNotifyGrowth ease-in-out 0.3s;
+    will-change: opacity, transform;
     transform-origin: 90% top;
 }
 .header__notify::before{
@@ -218,4 +219,13 @@
 }
 .header__navbar-item--show:hover .header__notify{
     display: block;
+}
+/* Tạo lớp ẩn mờ Modal */
+
+
+.modal__body{
+
+}
+.modal__inner{
+
 }
