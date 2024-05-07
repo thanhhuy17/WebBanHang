@@ -114,15 +114,36 @@
 .header__notify{
     position: absolute;
     background-color: var(--white-color);
-    top: 100%;
+    top: 118%;
     right: 0;
     width: 400px;
     height: fit-content;
     border:1px solid #D3D3D3;
     display: none;
-    
+    /* animation */
     animation: headerNotifyGrowth ease-in-out 0.3s;
     transform-origin: 90% top;
+}
+.header__notify::before{
+    content: "";
+    /* border: 20px solid; */
+    border-width: 20px 30px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    top: -30px;
+    right: -2px;
+    
+}
+.header__notify::after{
+    position: absolute;
+    content: "";
+    display: block;
+    height: 20px;
+    width: 100px;
+    /* background-color: aqua; */
+    top: -15px;
+    right: 0;    
 }
 .header__notify-header{
     background-color: var(--white-color);
