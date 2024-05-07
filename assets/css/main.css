@@ -110,3 +110,82 @@
 .header__qr-link-app-out-app_galely{
     height: 16px;
 }
+/* Bảng thông báo của quả chuông khi đưa trỏ chuột vào "Thông Báo" */
+.header__notify{
+    position: absolute;
+    background-color: var(--white-color);
+    top: 100%;
+    right: 0;
+    width: 400px;
+    height: fit-content;
+    border:1px solid #D3D3D3;
+    display: none;
+}
+.header__notify-header{
+    background-color: var(--white-color);
+    height: 40px;
+}
+.header__notify-header h3{    
+    margin: 0px 0px 0px 15px;
+    line-height: 40px;
+    color: #a4a3a3;
+    font-weight: 300;
+    font-size: 1.7rem;
+}
+.header__notify-list{
+    padding: 0;
+    background-color: rgb(255, 177, 137);
+    height: fit-content;    
+}
+.header__notify-list:hover{
+    background-color: rgb(255, 177, 137, 0.1);
+}
+.header__notify-items{
+    
+}
+/* .header__notify-list--viewed{
+    background-color: rgb(255, 177, 137, 0.1);
+} */
+.header__notify-items-link{
+    display: flex;
+    text-decoration: none;    
+}
+.header__notify-items-link-img{
+    width: 30px;
+    object-fit: contain;    
+    margin: 0 5px;
+}
+.header__notify-items-link-info{
+    
+}
+.header__notify-items-link-info-title{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-color);    
+}
+.header__notify-items-link-info-describe{
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    color: var(--text-color);
+    text-align: justify;
+      
+}
+.paragrap{
+    margin: 0;
+    margin-bottom: 10px;
+}
+/* Footer */
+.header__notify-footer{
+    text-align: center;
+    height: 30px;
+    
+}
+.header__notify-footer--viewAll{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    line-height: 30px;
+}
+.header__navbar-item:hover .header__notify{
+    display: block;
+}
