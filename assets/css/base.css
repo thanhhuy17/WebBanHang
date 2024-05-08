@@ -2,6 +2,7 @@
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
+    --main-color:#f05e36;
 }
 *{
     box-sizing: inherit;
@@ -54,6 +55,38 @@ html{
     border-radius: 5px ;
     border:1px solid #D3D3D3;
 }
+/* authen modal container */
+.auth-form__container{
+    margin: 0 32px;
+}
+/* Tạo button dùng chung */
+.btn{
+    min-width: 142px;
+    height: 36px;
+    font-size: 1.3rem; 
+    background-color: var(--white-color);  
+    border: none;
+    border-radius: 2px; 
+    padding: 0;
+}
+.btn:hover{
+    /* background-color: #a4a3a3; */
+    cursor: pointer;
+}
+.btn.btn--primary{
+    color: var(--white-color);
+    background-color: var(--main-color);
+    padding: 0;
+}
+.btn.btn--primary:hover{
+    background-color: rgba(252, 97, 50, 0.7);
+}
+
+
+
+
+
+
 /* Animation */
 @keyframes moveBottom{
     from{

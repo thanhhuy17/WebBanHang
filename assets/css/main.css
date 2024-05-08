@@ -228,3 +228,105 @@
 
 }
 /* Tạo Form đăng ký, đăng nhập */
+.auth-form{
+    width: 500px;
+    
+}
+.auth-form__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    margin: 25px 0;   
+}
+.auth-form__header-sign-in{
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: var(--text-color);
+    margin: 0;
+}
+.auth-form__switch-btn-login{
+    font-size: 1.6rem;
+    font-weight: 550;
+    color: var(--main-color);
+    text-decoration: none;    
+}
+.auth-form__switch-btn-login:hover{
+    color: rgba(252, 97, 50, 0.7);
+}
+
+.auth-form__input{
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 1.2rem;
+    font-size: 1.3rem;
+    border: 1px solid rgba(110, 110, 110, 0.3);
+    border-radius: 2px;
+    outline: none;
+}
+.auth-form__input:hover{
+    border-color: #a4a3a3;
+}
+.auth-form__note{
+    margin: 20px 5px;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: center;
+}
+.auth-form__note-title{
+    margin: 0;
+}
+.auth-form__note-title-link{
+    text-decoration:  none;
+    color:  var(--main-color);
+    font-weight: 450;
+}
+.auth-form__note-title-link:hover{
+    color: rgba(252, 97, 50, 0.7);
+}
+.auth-form__controls{
+    margin-top: 80px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+.auth-form__controls-space{
+    margin-right: 8px;
+}
+.auth-form__controls-space:hover{
+    background-color: #a4a3a3;
+}
+/* Link google và facebook */
+.auth-form__socials{    
+    width: 100%;
+    height: 60px;
+    background-color: #f5f5f5;
+    font-size: 1.4rem;    
+    display: flex;
+    /* justify-content: space-between; */    
+    justify-content: space-around; 
+    align-items: center; 
+    border-radius: 5px;
+}
+.btn.btn--social-facebook{
+    text-decoration: none;
+    background-color: #273d6b;
+    color: var(--white-color); 
+    padding: 8px;
+    
+}
+.btn.btn--social-google{
+    text-decoration: none;
+    padding: 8px 8px;
+    color: var(--text-color);
+    font-weight: 450;
+}
+.fa-brands{
+    font-size: 1.8rem;
+    margin-right: 20px; 
+}
+.fa-brands.fa-google{
+    color: #4285f4;
+}
+
+
+
