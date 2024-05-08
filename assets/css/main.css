@@ -244,6 +244,7 @@
     color: var(--text-color);
     margin: 0;
 }
+
 .auth-form__switch-btn-login{
     font-size: 1.6rem;
     font-weight: 550;
