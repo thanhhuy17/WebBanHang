@@ -53,7 +53,7 @@
     position: absolute;
     width: 1px;
     height: 16px;
-    background-color: beige;
+    background-color: rgb(220, 245, 223);
     right: -11px;
     top: 0; 
 }
@@ -121,7 +121,7 @@
     border:1px solid #D3D3D3;
     display: none;
     /* animation */
-    animation: headerNotifyGrowth ease-in-out 0.3s;
+    animation: SignInGrowth ease-in-out 0.3s;
     will-change: opacity, transform;
     transform-origin: 90% top;
 }
@@ -236,7 +236,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between; 
-    margin: 25px 0;   
+    margin: 28px 12px;   
 }
 .auth-form__header-sign-in{
     font-size: 2.2rem;
@@ -328,6 +328,97 @@
 .fa-brands.fa-google{
     color: #4285f4;
 }
+.auth-form__note-login{
+    position: relative;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: flex-end;
+}
+.auth-form__note-forget{
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: 450;
+    margin: 0 20px;
+}
+.auth-form__note-forget::after{    
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 16px;
+    background-color: rgba(110, 110, 110, 0.7); 
+    top: 0;
+    right:calc((89.297px / 2) + 40px);
+}
+.auth-form__note-help{
+    text-decoration: none;
+    color: var(--text-color);
+}
+/* CSS thanh tìm kiếm */
+.haeder__land-search{
+    display: flex;
+    justify-content: space-between;  
+    margin-top: 20px; 
+      
+}
+.land-search__logo-main{
+    display: flex;
+}
+.lologo-main--shopee{    
+    font-size: 40px;
+    color: var(--white-color);
+    margin-left: 10px;
+    
+}
+.logo-main__title{
+    font-size: 3rem;
+    margin: 0;
+    color: var(--white-color);
+    font-weight: 500;
+    margin-top: 16px;
+    cursor: default;
+}
+/*  */
+.land-search__search{
+    display: flex;
+    position: relative;
+    /* padding: 3px 5px; */
+    
+}
+.search__items-box{
+    min-width: 750px;
+    height: 36px;
+    font-size: 1.3rem;
+    border-radius: 2px;
+    border-color: rgba(110, 110, 110, 0.2);
+    outline: none;
+}
+.search__items-btn{
+    position: absolute;
+    font-size: 1.8rem;
+    top: 4px;
+    right: 5px;
+    background-color: var(--main-color);
+    color: var(--white-color);
+    padding: 5px 10px;
+    border-radius: 2px;
+    cursor: pointer;    
+}
+.search__items-btn:hover{
+    background-color: rgba(245, 71, 27, 0.7)
+}
+.land-search__logo-cart{
+    font-size: 25px;
+    color: var(--white-color);
+    cursor: pointer;
+    margin-top: 14px;
+    margin-right: 90px;
+}
+.land-search__logo-cart:hover{
+    color: rgba(255,255,255, 0.7);
+}
+
+
 
 
 
