@@ -167,9 +167,9 @@
 .header__notify-list:hover{
     background-color: rgb(255, 177, 137, 0.1);
 }
-.header__notify-items{
+/* .header__notify-items{
     
-}
+} */
 /* .header__notify-list--viewed{
     background-color: rgb(255, 177, 137, 0.1);
 } */
@@ -182,9 +182,9 @@
     object-fit: contain;    
     margin: 0 5px;
 }
-.header__notify-items-link-info{
+/* .header__notify-items-link-info{
     
-}
+} */
 .header__notify-items-link-info-title{
     font-size: 1.5rem;
     font-weight: 400;
@@ -219,14 +219,15 @@
 }
 .header__navbar-item--show:hover .header__notify{
     display: block;
+    z-index: 1;
 }
 /* Tạo lớp ẩn mờ Modal */
-.modal__body{
+/* .modal__body{
     
 }
 .modal__inner{
 
-}
+} */
 /* Tạo Form đăng ký, đăng nhập */
 .auth-form{
     width: 500px;
@@ -417,6 +418,81 @@
 .land-search__logo-cart:hover{
     color: rgba(255,255,255, 0.7);
 }
+.search__in-shop{
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 50px;    
+    cursor: pointer;
+}
+.search__in-shop:hover .search__in-shop__options{
+    display: block;
+}
+.search__in-shop--title,
+.search__in-shop--icon{
+    font-size: 1.3rem;
+    color: var(--text-color);
+    font-weight: 500;
+}
+.search__in-shop--title:hover,
+.search__in-shop--icon:hover{
+    color: rgba(158, 156, 156, 0.7);
+}
+.search__in-shop--icon{
+    margin: 0 10px;
+}
+.search__in-shop::before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 18px;
+    background-color: rgba(84, 87, 84, 0.356);
+    /* right: -11px;
+    top: 0; */
+    margin: 0 -10px;
+}
+.search__in-shop__options{
+    position: absolute;
+    width: 105px;
+    height: 65px;
+    background-color: var(--white-color);
+    padding: 0;    
+    margin-top: 30px;
+    border-radius: 2px;
+    border: 1px solid rgba(110, 110, 110, 0.3);
+    display: none;
+}
+.shop__options--list{
+    display: flex;
+    font-size: 1.3rem;
+    font-weight: 450;
+    color: var(--text-color);
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.shop__options--list:hover{
+    color: rgba(158, 156, 156, 0.7);
+}
+.list-in--icon,
+.list-out--icon{
+    color: var(--main-color);
+}
+/* Cầu nối của button "trong shop" khi hover vào */
+.search__in-shop::after{
+    position: absolute;
+    content: "";
+    display: block;
+    height: 20px;
+    width: 120px;
+    /* background-color: aqua; */
+    top: 15px;
+    right: -8px;
+}
+
+
+
 
 
 
