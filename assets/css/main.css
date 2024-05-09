@@ -490,7 +490,11 @@
     top: 15px;
     right: -8px;
 }
-
+.shop__options--list-in,
+.shop__options--list-out
+{
+    margin-right: 5px;
+}
 
 
 
