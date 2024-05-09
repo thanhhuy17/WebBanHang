@@ -409,15 +409,29 @@
     background-color: rgba(245, 71, 27, 0.7)
 }
 .land-search__logo-cart{
+    position: relative;
     font-size: 25px;
     color: var(--white-color);
     cursor: pointer;
     margin-top: 14px;
     margin-right: 90px;
+    
 }
 .land-search__logo-cart:hover{
     color: rgba(255,255,255, 0.7);
 }
+.search__logo-cart-list{
+    position: absolute;
+    top: 30px;
+    right: -10px;
+    width: 450px;
+    height: 192px;
+    background-color: #52b4db;
+    display: flex;
+    justify-content: center;
+}
+
+
 .search__in-shop{
     display: flex;
     position: absolute;
