@@ -408,6 +408,7 @@
 .search__items-btn:hover{
     background-color: rgba(245, 71, 27, 0.7)
 }
+
 .land-search__logo-cart{
     position: relative;
     font-size: 25px;
@@ -420,17 +421,52 @@
 .land-search__logo-cart:hover{
     color: rgba(255,255,255, 0.7);
 }
+
 .search__logo-cart-list{
     position: absolute;
-    top: 30px;
+    top: 35px;
     right: -10px;
-    width: 450px;
+    width: 400px;
     height: 192px;
-    background-color: #52b4db;
+    background-color: var(--white-color);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    border-radius: 3px;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    border: 1px solid rgba(110, 110, 110, 0.3);
+    display: none;
+}
+.search__logo-cart-list::before{
+    position: absolute;
+    content: "";
+    border: 20px solid;
+    /* border-width: 20px 30px; */
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    top: -30px;
+    right: 2px;
 }
 
+
+.land-search__logo-cart:hover .search__logo-cart-list{
+    display: block;
+}
+
+
+.cart-list--no-cart{
+    width: 160px;
+    height: 150px;
+    margin-left: 120px;
+}
+.cart-list--no-cart-para{
+    font-size: 1.3rem;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-align: center;
+}
 
 .search__in-shop{
     display: flex;
