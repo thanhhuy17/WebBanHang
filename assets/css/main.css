@@ -799,15 +799,17 @@
 }
 .header__navbar-user-menu__list{
     padding-left: 15px;
+    
 }
 .header__navbar-user-menu__list:hover{
-    background-color: rgba(158, 156, 156, 0.7);
+    background-color: rgba(219, 218, 218, 0.7);
     
 }
 .header__navbar-user-menu__list.header__navbar-user-menu__list--logout{
     color: #129a48;
     border: 1px solid #a4a3a3;
 }
+
 .header__navbar-user-menu::before{
     position: absolute;
     content: "";
@@ -822,10 +824,10 @@
     /* display: none; */
     
 }
-.header__navbar-user-menu__list:hover{
+/* .header__navbar-user-menu__list:hover{
     color: rgba(158, 156, 156, 0.7);
     
-}
+} */
 .header__navbar-user-menu__list.header__navbar-user-menu__list--logout:hover{
     color: rgba(123, 218, 80, 0.66);
 }
