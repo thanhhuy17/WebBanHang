@@ -1044,9 +1044,54 @@
     display: block;
 }
 
-
-
-
+/* Set home product */
+.home-product-item{
+    height: fit-content;
+    background-color: var(--white-color);
+    padding: 5px;
+}
+.home-product-item__img{
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home-product-item__name{
+    font-size: 1.5rem;
+    color: var(--text-color);
+    font-weight: 300;
+    text-align: justify;
+}
+.home-product-item__cost{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+.home-product-item__cost-new, .home-product-item__cost-per-sale,.home-product-item__cost-old{
+    margin-right: 5px;
+}
+.home-product-item__cost-new{
+    color: var(--main-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.home-product-item__cost-old{
+    font-size: 1.3rem;
+    color: #BDBDBD;
+    text-decoration: line-through;
+}
+.home-product-item__cost-new::first-letter{
+    font-size: 1rem;
+    text-decoration: underline;
+}
+.home-product-item__cost-old::first-letter{
+    font-size: 1rem;
+    text-decoration: underline;
+}
+.home-product-item__cost-per-sale{
+    font-size: 1.2rem;
+    color: var(--main-color);
+    font-weight: 600;
+}
 
 
 
