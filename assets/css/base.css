@@ -41,6 +41,7 @@ html{
     padding-right: 5px;
     width: 20%;
     /* display: flex; */
+    margin-bottom: 10px;
 }
 .gird__column-10{
     padding-left: 5px;

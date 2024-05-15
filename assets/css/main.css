@@ -942,6 +942,7 @@
     background-color: #EBEBEB;
     border-radius: 2px;
     font-size: 1.4rem;
+    margin-bottom: 5px;
 }
 .home-fillter__label{
     margin: 0 20px
@@ -1054,9 +1055,18 @@
 }
 
 /* Set home product */
+.home-product-item__collect{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    /* background-color: #4285f4; */
+    bottom: 10px;
+    left: 0;
+    padding-left: 5px;
+}
 .home-product-item{
     position: relative;
-    height: fit-content;
+    height: 385px;
     background-color: var(--white-color);
     padding: 5px;
 }
@@ -1070,6 +1080,7 @@
     color: var(--text-color);
     font-weight: 300;
     text-align: justify;
+    margin: 10px 0;
 }
 .home-product-item__cost{
     display: flex;
@@ -1081,11 +1092,11 @@
 }
 .home-product-item__cost-new{
     color: var(--main-color);
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 500;
 }
 .home-product-item__cost-old{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #BDBDBD;
     text-decoration: line-through;
 }
@@ -1147,7 +1158,8 @@
     /* border: 20px solid; */
     border-width: 5px 5px;
     border-style: solid;
-    border-color: transparent transparent #713a29 transparent;
+    border-color: transparent transparent var(--main-color) transparent;
+    filter: brightness(60%);
     position: absolute;
     bottom: -5px;
     left: 2px;
@@ -1176,30 +1188,21 @@
 .home-product-item__discount::after{
     position: absolute;
     content: "";
-    border-width: 0 25px 10px 0;    
-    border-style: solid;
-    /* border-color: #4285f4; */
-    border-color:transparent transparent #edc52f transparent;        
-    bottom: 0;
-    right: 0;
-    transform: rotate(180deg);
-    margin-bottom: -10px;
+    margin: auto;
+    border-top: 10px solid #edc52f;
+    border-right: 25px solid transparent;
+    bottom: -10px;
+    left: 0;
+    /* border-color:transparent transparent #edc52f transparent;         */
 }
 .home-product-item__discount::before{
-    
     position: absolute;
     content: "";
-    border-width: 0 10px 25px 0;    
-    border-style: solid;
-    /* border-color: #4285f4; */
-    border-color:transparent #edc52f transparent  transparent;        
-    bottom: 0;
-    left: 0;
-    transform: rotate(270deg);
-    margin-bottom: -17.3px;
-    margin-left: 7.5px;
-    
-    
+    margin: auto;
+    border-top: 10px solid #edc52f;
+    border-left: 25px solid transparent;
+    bottom: -10px;
+    right: 0;
 }
 .home-product-item__discount-percent{
     margin: 0;
