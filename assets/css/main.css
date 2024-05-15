@@ -966,6 +966,7 @@
     border-radius: 2px;
     position: relative;
 }
+
 .home-fillter__select:hover{
     color:  var(--main-color);
 }
@@ -1054,6 +1055,7 @@
 
 /* Set home product */
 .home-product-item{
+    position: relative;
     height: fit-content;
     background-color: var(--white-color);
     padding: 5px;
@@ -1128,6 +1130,9 @@
     font-weight: 200;
 }
 .home-product-item__love{
+    position: absolute;
+    top:10px;
+    left: -8px;
     display: flex;
     align-items: center;
     width: 60px;
@@ -1135,6 +1140,18 @@
     background-color: var(--main-color);
     justify-content: center;
     justify-content: space-around;
+    border-radius: 0px 4px 4px 0px;
+}
+.home-product-item__love::after{
+    content: "";
+    /* border: 20px solid; */
+    border-width: 5px 5px;
+    border-style: solid;
+    border-color: transparent transparent #713a29 transparent;
+    position: absolute;
+    bottom: -5px;
+    left: 2px;
+    transform: rotate(45deg);
 }
 .home-product-item__love-icon{
     font-size: 1rem;
@@ -1143,4 +1160,57 @@
 .home-product-item__love-title{
     font-size: 1rem;
     color: var(--white-color);
+}
+.home-product-item__discount{
+    position: absolute;
+    width: 50px;
+    height: 35px;
+    background-color: #edc52f;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.home-product-item__discount::after{
+    position: absolute;
+    content: "";
+    border-width: 0 25px 10px 0;    
+    border-style: solid;
+    /* border-color: #4285f4; */
+    border-color:transparent transparent #edc52f transparent;        
+    bottom: 0;
+    right: 0;
+    transform: rotate(180deg);
+    margin-bottom: -10px;
+}
+.home-product-item__discount::before{
+    
+    position: absolute;
+    content: "";
+    border-width: 0 10px 25px 0;    
+    border-style: solid;
+    /* border-color: #4285f4; */
+    border-color:transparent #edc52f transparent  transparent;        
+    bottom: 0;
+    left: 0;
+    transform: rotate(270deg);
+    margin-bottom: -17.3px;
+    margin-left: 7.5px;
+    
+    
+}
+.home-product-item__discount-percent{
+    margin: 0;
+    font-size: 1.5rem;
+    color: var(--main-color);
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+.home-product-item__discount-title{
+    margin: 0;
+    font-size: 1.5rem;
+    color: var(--white-color);
+    font-weight: 500;
 }
