@@ -26,8 +26,7 @@
 .header__navbar-item-link{
     color: var(--white-color);
     text-decoration: none;
-    font-size: 1.4rem;
-    
+    font-size: 1.4rem;    
     font-weight: 300;
 }
 .header__navbar-list,
@@ -91,6 +90,7 @@
     border-radius: 5px;
     display: none;
     animation: moveBottom 2s infinite, fadeIn 1s ease-in;
+    z-index: 3;
 }
 .header__qrcode-img{
     width: 100%;
@@ -99,7 +99,9 @@
     display: flex;
     flex-wrap: wrap; 
     justify-content: center;
-    
+    background-color: var(--white-color);
+    margin-top: -5px;
+    border-radius: 3px;
 }
 .header__qr-link-app-out-appstore{
     height: 18px;
@@ -419,6 +421,8 @@
     cursor: pointer;
     margin-top: 6px;
     margin-right: 90px;
+    /* background-color: #f3f3f3; */
+    /* z-index: 3; */
     
 }
 .land-search__logo-cart:hover{
@@ -459,52 +463,6 @@
     z-index: 1;
     display: none;
 }
-/* Hiển thị danh sách đặt hàng */
-.land-search__logo-cart:hover .cart__product-add-header{
-	display: block;
-}
-.land-search__logo-cart:hover .search__logo-cart-list::before{
-	display: block;
-}
-
-.land-search__logo-cart:hover .search__logo-cart-list{
-    display: block;
-}
-
-
-.cart-list--no-cart{
-    width: 160px;
-    height: 150px;
-    margin-left: 120px;
-    display: none;
-}
-.cart-list--no-cart-para{
-    font-size: 1.3rem;
-    color: var(--text-color);
-    font-weight: 500;
-    font-size: 1.5rem;
-    text-align: center;
-    display: none;
-}
-.hidden__cart-list--no-cart .cart-list--no-cart,
-.hidden__cart-list--no-cart .cart-list--no-cart-para{
-    display: block;
-}
-.land-search__logo-cart-number-increase{
-    position: absolute;
-    padding: 1px 8px;
-    background-color: var(--white-color);
-    color: var(--main-color);
-    font-size: 1.5rem;
-    font-weight: 500;
-    top: -16px;
-    right: -18px;
-    border-radius: 12px;
-    border: 2px solid #e75a33;
-}
-.land-search__logo-cart-number-increase:hover{
-    background-color: rgba(255,255,255, 0.7);
-}
 /* ------------View giỏ hàng khi có hàng bên trong--------------------------------- */
 .cart__product-add-header{
     position: absolute;
@@ -514,6 +472,8 @@
     border: 1px solid #dedfe0;  
     border-radius: 3px; 
     display: none;
+    background-color: #d3d0d0; 
+    /* z-index: 2; */
 }
 .product-add__header{    
     display: flex;
@@ -528,6 +488,7 @@
     color: var(--text-color);
     font-weight: 400;
     margin-left: 8px;
+    
 }
 .product-add__list{   
     width: 100%;
@@ -707,6 +668,51 @@
 {
     margin-right: 5px;
 }
+/* Hiển thị danh sách đặt hàng */
+.land-search__logo-cart:hover .cart__product-add-header{
+	display: block;
+}
+.land-search__logo-cart:hover .search__logo-cart-list::before{
+	display: block;
+}
+
+.land-search__logo-cart:hover .search__logo-cart-list{
+    display: block;
+}
+.cart-list--no-cart{
+    width: 160px;
+    height: 150px;
+    margin-left: 120px;
+    display: none;
+}
+.cart-list--no-cart-para{
+    font-size: 1.3rem;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-align: center;
+    display: none;
+}
+.hidden__cart-list--no-cart .cart-list--no-cart,
+.hidden__cart-list--no-cart .cart-list--no-cart-para{
+    display: block;
+}
+.land-search__logo-cart-number-increase{
+    position: absolute;
+    padding: 1px 8px;
+    background-color: var(--white-color);
+    color: var(--main-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+    top: -16px;
+    right: -18px;
+    border-radius: 12px;
+    border: 2px solid #e75a33;
+}
+.land-search__logo-cart-number-increase:hover{
+    background-color: rgba(255,255,255, 0.7);
+}
+
 /* Ô lịch sử tìm kiếm */
 .land-search__history{
     position: absolute;
@@ -715,7 +721,9 @@
     top: 40px;
     border: 1px solid rgba(110, 110, 110, 0.3);
     border-radius: 3px;
+    background-color: #f3f3f3;
     display: none;
+    z-index: 1;
 }
 .land-search__history-header{
     position: absolute;
@@ -1119,4 +1127,20 @@
     color: #a6a6a6;
     font-weight: 200;
 }
-
+.home-product-item__love{
+    display: flex;
+    align-items: center;
+    width: 60px;
+    height: 20px;
+    background-color: var(--main-color);
+    justify-content: center;
+    justify-content: space-around;
+}
+.home-product-item__love-icon{
+    font-size: 1rem;
+    color: var(--white-color);
+}
+.home-product-item__love-title{
+    font-size: 1rem;
+    color: var(--white-color);
+}
