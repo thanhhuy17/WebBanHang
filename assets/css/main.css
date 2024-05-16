@@ -1070,8 +1070,12 @@
     background-color: var(--white-color);
     padding: 5px;
     cursor: pointer;
-    animation: moveTop3px 0.2s ease-in;
+    
 }
+.home-product-item:hover{
+    animation: moveTop3px 0.3s ease;
+}
+
 .home-product-item__img{
     padding-top: 100%;
     background-repeat: no-repeat;
