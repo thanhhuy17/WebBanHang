@@ -89,7 +89,7 @@
     padding: 8px;
     border-radius: 5px;
     display: none;
-    animation: moveBottom 2s infinite, fadeIn 1s ease-in;
+    animation: moveBottom 2s , fadeIn 1s ease-in;
     z-index: 3;
 }
 .header__qrcode-img{
@@ -942,7 +942,7 @@
     background-color: #EBEBEB;
     border-radius: 2px;
     font-size: 1.4rem;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 .home-fillter__label{
     margin: 0 20px
@@ -1069,6 +1069,8 @@
     height: 385px;
     background-color: var(--white-color);
     padding: 5px;
+    cursor: pointer;
+    animation: moveTop3px 0.2s ease-in;
 }
 .home-product-item__img{
     padding-top: 100%;
