@@ -1070,10 +1070,11 @@
     background-color: var(--white-color);
     padding: 5px;
     cursor: pointer;
-    
+    border-radius: 0 0 3px 3px;
+    box-shadow:  0 0.5rem 0.5rem 0 rgba(0,0,0,0.3);
 }
 .home-product-item:hover{
-    animation: moveTop3px 0.3s ease;
+    animation: moveTop3px 0.3s ease-in-out;
 }
 
 .home-product-item__img{
