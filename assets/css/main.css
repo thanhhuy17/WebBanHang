@@ -36,7 +36,7 @@
 {
     display: inline-flex;
     align-items: center;
-    z-index: 2;
+    z-index: 3;
 }
 
 .header__navbar-item:hover,
@@ -895,6 +895,7 @@
 }
 .grid__row-app{
     padding: 30px;
+    padding-bottom: 10px;
 }
 .category{
     background-color: var(--white-color);
@@ -1244,4 +1245,50 @@
     font-size: 1.5rem;
     color: var(--white-color);
     font-weight: 500;
+}
+
+/* Footer */
+.footer.footer-position{
+    height: 200px;
+    /* background-color: #4285f4; */
+    border-top: 4px solid var(--main-color);
+}
+.heading-footer{
+    color: #818181;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 30px;
+}
+.footer-list{
+    list-style: none;
+    padding: 0;
+    font-size: 1.2rem;
+    line-height: 3rem;
+}
+.footer-item__link{
+    color: #818181;
+    text-decoration: none;
+}
+.heading-footer__QR{
+    display: flex;
+}
+.heading-footer__QR-img .footer__qrcode-img{
+    width: 80px;
+    border:1px solid #818181;
+    padding: 5px;
+    margin-right: 10px;
+}
+.footer__QR-img--combine{
+    width: 100px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+}
+.heading-footer__QR-appStore .footer__qr-link-appstore {
+    height: 20px;
+}
+.heading-footer__QR-chPlay .footer__qr-link-gg_play{
+    height: 20px;
 }
