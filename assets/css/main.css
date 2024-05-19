@@ -36,6 +36,7 @@
 {
     display: inline-flex;
     align-items: center;
+    z-index: 2;
 }
 
 .header__navbar-item:hover,
@@ -364,8 +365,7 @@
 .haeder__land-search{
     display: flex;
     justify-content: space-between;  
-    margin-top: 20px; 
-      
+    margin-top: 20px;
 }
 .land-search__logo-main{
     display: flex;
@@ -422,15 +422,16 @@
     margin-top: 6px;
     margin-right: 90px;
     /* background-color: #f3f3f3; */
-    /* z-index: 3; */
+    z-index: 2;
     
 }
-.land-search__logo-cart:hover{
+.land-search__logo-cart:hover .land-search__logo-cart::after{
     color: rgba(255,255,255, 0.7);
     /* animation */
     animation: SignInGrowth ease-in-out 0.3s;
     will-change: opacity, transform;
     transform-origin: 95% top;
+    display: block;
 }
 
 .search__logo-cart-list{
@@ -438,19 +439,44 @@
     top: 35px;
     right: -10px;
     width: 400px;
-    /* height: 192px; */
-    height: fit-content;
+    /* height: fit-content; */
+    height: 400px;
     background-color: var(--white-color);
     display: flex;
     justify-content: space-between;
     border-radius: 3px;
     flex-direction: column;
     align-items: center;
-    /* border: 1px solid rgba(110, 110, 110, 0.3); */
-    /* display: none; */
     cursor: default;
+    display: none;
 }
-.search__logo-cart-list::before{
+.product-add__list-combine{
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    overflow-y: scroll;
+    /* background-color: var(--white-color); */
+    /* z-index: 2; */
+    margin-top: 38px;
+    border: 1px solid #dedfe0;
+}
+
+.land-search__logo-cart:hover .search__logo-cart-list
+{
+    display: block;
+}
+/* ------------View giỏ hàng khi có hàng bên trong--------------------------------- */
+.cart__product-add-header{
+    position: absolute;
+    width: 100%;
+    /* height: 60vh; */
+    border: 1px solid #dedfe0;  
+    border-radius: 3px; 
+    display: none;
+    background-color: #d3d0d0; 
+    
+}
+.cart__product-add-header::after{
     position: absolute;
     content: "";
     border: 20px solid;
@@ -458,32 +484,24 @@
     border-style: solid;
     border-color: transparent transparent var(--white-color) transparent;
     top: -30px;
-    right: 2px;
+    right: 0px;
     cursor: pointer;
-    z-index: 1;
     display: none;
-}
-/* ------------View giỏ hàng khi có hàng bên trong--------------------------------- */
-.cart__product-add-header{
-    position: absolute;
-    width: 100%;
-    /* height: fit-content; */
-    /* background-color: #D3D3D3; */
-    border: 1px solid #dedfe0;  
-    border-radius: 3px; 
-    display: none;
-    background-color: #d3d0d0; 
-    /* z-index: 2; */
-}
+} 
+.land-search__logo-cart:hover .cart__product-add-header::after{
+	display: block;
+} 
 .product-add__header{    
     display: flex;
     align-items: center; 
     width: 100%;
     height: 36px;
     background-color: var(--white-color);      
+    /* background-color: #129a48; */
+    z-index: 1;
+    
 }
 .product-add__header-title{
-    /* position: absolute; */
     font-size: 1.4rem;
     color: var(--text-color);
     font-weight: 400;
@@ -493,10 +511,10 @@
 .product-add__list{   
     width: 100%;
     height: 50px;
-    /* background-color: #67e641; */
     list-style: none;
     margin: 0;
     padding-left: 0;
+
     
 }
 .product-add__list:hover{
@@ -581,9 +599,12 @@
     cursor: pointer;
 }
 .product-add__btn-view-cart{
+    position: absolute;
     display: flex;
     flex-direction: row-reverse;
-    
+    width: 100%;
+    height: 60 px;
+    background-color: var(--white-color)
 }
 .add__btn-view-cart{
     margin: 10px 10px 10px 0;
@@ -672,9 +693,7 @@
 .land-search__logo-cart:hover .cart__product-add-header{
 	display: block;
 }
-.land-search__logo-cart:hover .search__logo-cart-list::before{
-	display: block;
-}
+
 
 .land-search__logo-cart:hover .search__logo-cart-list{
     display: block;
@@ -723,7 +742,7 @@
     border-radius: 3px;
     background-color: #f3f3f3;
     display: none;
-    z-index: 1;
+    z-index: 2;
 }
 .land-search__history-header{
     position: absolute;
@@ -966,6 +985,7 @@
     justify-content: space-between;
     border-radius: 2px;
     position: relative;
+    z-index: 1;
 }
 
 .home-fillter__select:hover{
@@ -1048,6 +1068,7 @@
     background-color: #EBEBEB;
     color: var(--main-color);
     font-weight: 500;
+    
 }
 
 .home-fillter__select:hover .home-fillter__select-list{
@@ -1071,7 +1092,7 @@
     padding: 5px;
     cursor: pointer;
     border-radius: 0 0 3px 3px;
-    box-shadow:  0 0.5rem 0.5rem 0 rgba(0,0,0,0.3);
+    box-shadow:  0 0.5rem 5px rgba(0,0,0,0.3);
 }
 .home-product-item:hover{
     animation: moveTop3px 0.3s ease-in-out;
